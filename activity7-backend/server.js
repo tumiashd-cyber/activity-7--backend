@@ -29,10 +29,12 @@ app.get("/", (req, res) => {
 
   res.type("html").send(`<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8">
+<meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${PROJECT_NAME} API</title>
 <style>
-  body{font-family:Arial,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#222}
+  :root{color-scheme:light}
+  body{background:#fff;font-family:Arial,sans-serif;max-width:860px;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#222}
   table{border-collapse:collapse;width:100%;margin:1rem 0}
   th,td{border:1px solid #ccc;padding:.5rem;text-align:left}
   th{background:#eef3f8}
